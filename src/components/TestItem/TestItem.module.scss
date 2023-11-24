@@ -1,0 +1,17 @@
+.test-item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+  &__wrapp {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
