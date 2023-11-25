@@ -4,7 +4,7 @@ import TestItem from '../TestItem/TestItem';
 
 const TestList = ({ units }) => {
   const items = units.map(unit => (
-    <TestItem key={unit.id} title={unit.title} />
+    <TestItem key={unit.id} title={unit.title} id={unit.id} />
   ));
 
   return <div className={styles['test-list']}>{items}</div>;
