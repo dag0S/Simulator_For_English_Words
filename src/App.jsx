@@ -4,6 +4,7 @@ import Card from './components/Card/Card';
 import Header from './components/Header/Header';
 import TestList from './components/TestList/TestList';
 import WordList from './components/WordList/WordList';
+import Footer from './Footer/Footer';
 
 import styles from './App.module.scss';
 import data from './assets/data/data';
@@ -27,17 +28,23 @@ const App = () => {
 
   return (
     <>
-      <Header onSetUnit={getUnitsHandler} />
-      <main>
-        <div className="container">
-          <Card className={styles['main-card']}>
-            {isTestList && <TestList units={units} />}
-            {isWordList && (
-              <WordList words={randomWordsForTest} title={currentUnit.title} />
-            )}
-          </Card>
-        </div>
-      </main>
+      <div className="wrapper">
+        <Header onSetUnit={getUnitsHandler} />
+        <main className={styles.main}>
+          <div className="container">
+            <Card className={styles['main-card']}>
+              {isTestList && <TestList units={units} />}
+              {isWordList && (
+                <WordList
+                  words={randomWordsForTest}
+                  title={currentUnit.title}
+                />
+              )}
+            </Card>
+          </div>
+        </main>
+        <Footer />
+      </div>
     </>
   );
 };

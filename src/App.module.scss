@@ -1,7 +1,12 @@
 .main-card {
   margin: 0 auto;
+  margin-bottom: 43px;
   padding: 45px 50px;
   display: flex;
   flex-direction: column;
   gap: 45px;
+}
+
+.main {
+  flex: 1 1 auto;
 }

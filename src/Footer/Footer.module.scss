@@ -1,0 +1,18 @@
+.footer {
+  background: #04706f;
+  height: 122px;
+  padding: 34px 0;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon-wrapper {
+    display: flex;
+    gap: 35px;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
